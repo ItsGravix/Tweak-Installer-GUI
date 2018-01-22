@@ -49,6 +49,11 @@ namespace Tweak_Installer
 
         private void Main_Load(object sender, EventArgs e)
         {
+            if (!File.Exists("settings"))
+            {
+                string[] def = new string[3];
+                File.WriteAllLines("settings", def);
+            }
             string[] data = File.ReadAllLines("settings"); //get ssh settings
             for (int i = 0; i != data.Length; i++)
             {

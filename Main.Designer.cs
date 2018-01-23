@@ -32,19 +32,19 @@
             this.Uninstall = new System.Windows.Forms.Button();
             this.host = new System.Windows.Forms.TextBox();
             this.pass = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.deb = new System.Windows.Forms.TextBox();
             this.select = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.respring = new System.Windows.Forms.Button();
+            this.uicache = new System.Windows.Forms.Button();
+            this.auto = new System.Windows.Forms.CheckBox();
+            this.error = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // install
             // 
-            this.install.Location = new System.Drawing.Point(12, 201);
+            this.install.Location = new System.Drawing.Point(12, 123);
             this.install.Name = "install";
             this.install.Size = new System.Drawing.Size(96, 23);
             this.install.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // Uninstall
             // 
-            this.Uninstall.Location = new System.Drawing.Point(114, 201);
+            this.Uninstall.Location = new System.Drawing.Point(114, 123);
             this.Uninstall.Name = "Uninstall";
             this.Uninstall.Size = new System.Drawing.Size(95, 23);
             this.Uninstall.TabIndex = 1;
@@ -72,89 +72,100 @@
             // 
             // pass
             // 
-            this.pass.Location = new System.Drawing.Point(12, 107);
+            this.pass.Location = new System.Drawing.Point(12, 68);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(197, 20);
             this.pass.TabIndex = 3;
             this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
-            // 
-            // username
-            // 
-            this.username.Location = new System.Drawing.Point(12, 68);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(197, 20);
-            this.username.TabIndex = 4;
-            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "host";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "user";
+            this.label1.Text = "device ip address";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 91);
+            this.label3.Location = new System.Drawing.Point(12, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "pass";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "deb";
-            // 
-            // deb
-            // 
-            this.deb.Location = new System.Drawing.Point(12, 146);
-            this.deb.Name = "deb";
-            this.deb.Size = new System.Drawing.Size(197, 20);
-            this.deb.TabIndex = 9;
+            this.label3.Text = "root password";
             // 
             // select
             // 
-            this.select.Location = new System.Drawing.Point(12, 172);
+            this.select.Location = new System.Drawing.Point(12, 94);
             this.select.Name = "select";
             this.select.Size = new System.Drawing.Size(197, 23);
             this.select.TabIndex = 10;
-            this.select.Text = "Select Deb";
+            this.select.Text = "Select Debs and IPAs";
             this.select.UseVisualStyleBackColor = true;
             this.select.Click += new System.EventHandler(this.select_Click);
             // 
             // openFileDialog
             // 
             this.openFileDialog.FileName = "example.deb";
+            this.openFileDialog.Multiselect = true;
+            // 
+            // respring
+            // 
+            this.respring.Location = new System.Drawing.Point(15, 152);
+            this.respring.Name = "respring";
+            this.respring.Size = new System.Drawing.Size(96, 23);
+            this.respring.TabIndex = 11;
+            this.respring.Text = "Respring";
+            this.respring.UseVisualStyleBackColor = true;
+            this.respring.Click += new System.EventHandler(this.respring_Click);
+            // 
+            // uicache
+            // 
+            this.uicache.Location = new System.Drawing.Point(113, 152);
+            this.uicache.Name = "uicache";
+            this.uicache.Size = new System.Drawing.Size(96, 23);
+            this.uicache.TabIndex = 12;
+            this.uicache.Text = "Uicache";
+            this.uicache.UseVisualStyleBackColor = true;
+            this.uicache.Click += new System.EventHandler(this.uicache_Click);
+            // 
+            // auto
+            // 
+            this.auto.AutoSize = true;
+            this.auto.Checked = true;
+            this.auto.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.auto.Location = new System.Drawing.Point(15, 181);
+            this.auto.Name = "auto";
+            this.auto.Size = new System.Drawing.Size(174, 17);
+            this.auto.TabIndex = 13;
+            this.auto.Text = "automatic respring and uicache";
+            this.auto.UseVisualStyleBackColor = true;
+            // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.Location = new System.Drawing.Point(12, 197);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(188, 13);
+            this.error.TabIndex = 14;
+            this.error.TabStop = true;
+            this.error.Text = "report errors / bugs / general problems";
+            this.error.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.error_LinkClicked);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(221, 230);
+            this.ClientSize = new System.Drawing.Size(221, 219);
+            this.Controls.Add(this.error);
+            this.Controls.Add(this.auto);
+            this.Controls.Add(this.uicache);
+            this.Controls.Add(this.respring);
             this.Controls.Add(this.select);
-            this.Controls.Add(this.deb);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.username);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.host);
             this.Controls.Add(this.Uninstall);
@@ -174,14 +185,14 @@
         private System.Windows.Forms.Button Uninstall;
         private System.Windows.Forms.TextBox host;
         private System.Windows.Forms.TextBox pass;
-        private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox deb;
         private System.Windows.Forms.Button select;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Button respring;
+        private System.Windows.Forms.Button uicache;
+        private System.Windows.Forms.CheckBox auto;
+        private System.Windows.Forms.LinkLabel error;
     }
 }
 

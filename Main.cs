@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,19 +20,32 @@ namespace Tweak_Installer
 {
     public partial class Main : Form
     {
+        static List<string> debs = new List<string>();
         public Main()
         {
             InitializeComponent();
         }
-
+        string join(List<string> s, string i)
+        {
+            string temp = "";
+            foreach (string j in s)
+            {
+                temp += '"' + j + '"' + i;
+            }
+            return temp;
+        }
         private void select_Click(object sender, EventArgs e)
         {
+            debs.Clear();
             var f = openFileDialog.ShowDialog();
             switch (f)
             {
                 case DialogResult.OK:
                     {
-                        deb.Text = openFileDialog.FileName;
+                        foreach (string i in openFileDialog.FileNames)
+                        {
+                            debs.Add(i);
+                        }
                         break;
                     }
             }
@@ -39,16 +53,34 @@ namespace Tweak_Installer
 
         private void install_Click(object sender, EventArgs e)
         {
-            Process.Start("tic.exe", "install \"" + deb.Text + "\"");
+            Process.Start("tic.exe", "dont-update " + (!auto.Checked ? "dont-respring dont-refresh " : "") + " install " + join(debs, " "));
         }
 
         private void Uninstall_Click(object sender, EventArgs e)
         {
-            Process.Start("tic.exe", "uninstall \"" + deb.Text + "\"");
+            Process.Start("tic.exe", "dont-update " + (!auto.Checked ? "dont-respring dont-refresh " : "") + " uninstall " + join(debs, " "));
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
+            //check for updates
+            try
+            {
+                using (WebClient client = new WebClient())
+                {
+                    string version = client.DownloadString("https://raw.githubusercontent.com/josephwalden13/tweak-installer/master/bin/Debug/version.txt");
+                    string current = File.ReadAllText("version.txt");
+                    if (current != version)
+                    {
+                        var f = MessageBox.Show(caption: "Update Available!", text: ($"Version {version.Replace("\n", "")} released. Please download it from https://github.com/josephwalden13/tweak-installer/releases\nWould you like to update?"), buttons: MessageBoxButtons.YesNo);
+                        if (f == DialogResult.Yes)
+                        {
+                            Process.Start("https://github.com/josephwalden13/tweak-installer/releases");
+                        }
+                    }
+                }
+            }
+            catch { }
             if (!File.Exists("settings"))
             {
                 string[] def = new string[3];
@@ -60,26 +92,34 @@ namespace Tweak_Installer
                 data[i] = data[i].Split('#')[0];
             }
             host.Text = data[0];
-            username.Text = data[1];
             pass.Text = data[2];
         }
 
         private void host_TextChanged(object sender, EventArgs e)
         {
-            string[] data = { host.Text, username.Text, pass.Text };
-            File.WriteAllLines("settings", data);
-        }
-
-        private void username_TextChanged(object sender, EventArgs e)
-        {
-            string[] data = { host.Text, username.Text, pass.Text };
+            string[] data = { host.Text, "root", pass.Text };
             File.WriteAllLines("settings", data);
         }
 
         private void pass_TextChanged(object sender, EventArgs e)
         {
-            string[] data = { host.Text, username.Text, pass.Text };
+            string[] data = { host.Text, "root", pass.Text };
             File.WriteAllLines("settings", data);
+        }
+
+        private void respring_Click(object sender, EventArgs e)
+        {
+            Process.Start("tic.exe", "dont-update no-install dont-refresh");
+        }
+
+        private void uicache_Click(object sender, EventArgs e)
+        {
+            Process.Start("tic.exe", "dont-update no-install dont-respring");
+        }
+
+        private void error_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/josephwalden13/tweak-installer/issues");
         }
     }
 }

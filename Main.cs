@@ -122,11 +122,6 @@ namespace Tweak_Installer
             Process.Start("https://github.com/josephwalden13/tweak-installer/issues");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void debslnk_Click(object sender, EventArgs e)
         {
             Process.Start("http://s0n1c.org/cydia/");

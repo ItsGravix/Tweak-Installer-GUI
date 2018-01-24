@@ -40,7 +40,7 @@
             this.uicache = new System.Windows.Forms.Button();
             this.auto = new System.Windows.Forms.CheckBox();
             this.error = new System.Windows.Forms.LinkLabel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.version = new System.Windows.Forms.Label();
             this.twitter = new System.Windows.Forms.LinkLabel();
             this.reddit = new System.Windows.Forms.LinkLabel();
             this.creator = new System.Windows.Forms.LinkLabel();
@@ -116,7 +116,6 @@
             this.iplabel.Size = new System.Drawing.Size(126, 29);
             this.iplabel.TabIndex = 5;
             this.iplabel.Text = "device ip:";
-            this.iplabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // passwordlabel
             // 
@@ -181,8 +180,8 @@
             // 
             // auto
             // 
-            this.auto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.auto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.auto.AutoSize = true;
             this.auto.Checked = true;
@@ -210,16 +209,16 @@
             this.error.Text = "report errors / bugs / general problems";
             this.error.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.error_LinkClicked);
             // 
-            // label4
+            // version
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(9, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "beta9";
+            this.version.AutoSize = true;
+            this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.version.ForeColor = System.Drawing.Color.DimGray;
+            this.version.Location = new System.Drawing.Point(9, 9);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(39, 13);
+            this.version.TabIndex = 16;
+            this.version.Text = "beta9";
             // 
             // twitter
             // 
@@ -326,7 +325,7 @@
             this.Controls.Add(this.creator);
             this.Controls.Add(this.reddit);
             this.Controls.Add(this.twitter);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.version);
             this.Controls.Add(this.error);
             this.Controls.Add(this.auto);
             this.Controls.Add(this.uicache);
@@ -363,7 +362,7 @@
         private System.Windows.Forms.Button uicache;
         private System.Windows.Forms.CheckBox auto;
         private System.Windows.Forms.LinkLabel error;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label version;
         private System.Windows.Forms.LinkLabel twitter;
         private System.Windows.Forms.LinkLabel reddit;
         private System.Windows.Forms.LinkLabel creator;

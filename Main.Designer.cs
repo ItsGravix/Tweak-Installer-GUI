@@ -217,9 +217,9 @@
             this.version.ForeColor = System.Drawing.Color.DimGray;
             this.version.Location = new System.Drawing.Point(9, 9);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(39, 13);
+            this.version.Size = new System.Drawing.Size(25, 13);
             this.version.TabIndex = 16;
-            this.version.Text = "beta9";
+            this.version.Text = "1.0";
             // 
             // twitter
             // 

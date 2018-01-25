@@ -48,6 +48,7 @@
             this.debslnk = new System.Windows.Forms.Button();
             this.github = new System.Windows.Forms.LinkLabel();
             this.autolabel = new System.Windows.Forms.Label();
+            this.paypal = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // install
@@ -60,7 +61,7 @@
             this.install.Location = new System.Drawing.Point(12, 222);
             this.install.Name = "install";
             this.install.Size = new System.Drawing.Size(220, 75);
-            this.install.TabIndex = 0;
+            this.install.TabIndex = 5;
             this.install.Text = "Install";
             this.install.UseVisualStyleBackColor = false;
             this.install.Click += new System.EventHandler(this.install_Click);
@@ -75,7 +76,7 @@
             this.Uninstall.Location = new System.Drawing.Point(238, 222);
             this.Uninstall.Name = "Uninstall";
             this.Uninstall.Size = new System.Drawing.Size(220, 75);
-            this.Uninstall.TabIndex = 1;
+            this.Uninstall.TabIndex = 6;
             this.Uninstall.Text = "Uninstall";
             this.Uninstall.UseVisualStyleBackColor = false;
             this.Uninstall.Click += new System.EventHandler(this.Uninstall_Click);
@@ -84,13 +85,13 @@
             // 
             this.host.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.host.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.host.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.host.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.host.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.host.ForeColor = System.Drawing.Color.White;
             this.host.Location = new System.Drawing.Point(238, 23);
             this.host.Name = "host";
             this.host.Size = new System.Drawing.Size(200, 27);
-            this.host.TabIndex = 2;
+            this.host.TabIndex = 0;
             this.host.TextChanged += new System.EventHandler(this.host_TextChanged);
             // 
             // pass
@@ -103,7 +104,7 @@
             this.pass.Name = "pass";
             this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(200, 27);
-            this.pass.TabIndex = 3;
+            this.pass.TabIndex = 1;
             this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
             // 
             // iplabel
@@ -114,7 +115,7 @@
             this.iplabel.Location = new System.Drawing.Point(106, 21);
             this.iplabel.Name = "iplabel";
             this.iplabel.Size = new System.Drawing.Size(126, 29);
-            this.iplabel.TabIndex = 5;
+            this.iplabel.TabIndex = 17;
             this.iplabel.Text = "device ip:";
             // 
             // passwordlabel
@@ -125,7 +126,7 @@
             this.passwordlabel.Location = new System.Drawing.Point(46, 60);
             this.passwordlabel.Name = "passwordlabel";
             this.passwordlabel.Size = new System.Drawing.Size(186, 29);
-            this.passwordlabel.TabIndex = 7;
+            this.passwordlabel.TabIndex = 18;
             this.passwordlabel.Text = "root password:";
             // 
             // select
@@ -138,7 +139,7 @@
             this.select.Location = new System.Drawing.Point(12, 165);
             this.select.Name = "select";
             this.select.Size = new System.Drawing.Size(446, 51);
-            this.select.TabIndex = 10;
+            this.select.TabIndex = 4;
             this.select.Text = "Select Debs, Zips and IPAs";
             this.select.UseVisualStyleBackColor = false;
             this.select.Click += new System.EventHandler(this.select_Click);
@@ -158,7 +159,7 @@
             this.respring.Location = new System.Drawing.Point(12, 303);
             this.respring.Name = "respring";
             this.respring.Size = new System.Drawing.Size(220, 49);
-            this.respring.TabIndex = 11;
+            this.respring.TabIndex = 7;
             this.respring.Text = "Respring";
             this.respring.UseVisualStyleBackColor = false;
             this.respring.Click += new System.EventHandler(this.respring_Click);
@@ -173,15 +174,15 @@
             this.uicache.Location = new System.Drawing.Point(238, 303);
             this.uicache.Name = "uicache";
             this.uicache.Size = new System.Drawing.Size(220, 49);
-            this.uicache.TabIndex = 12;
+            this.uicache.TabIndex = 8;
             this.uicache.Text = "Uicache";
             this.uicache.UseVisualStyleBackColor = false;
             this.uicache.Click += new System.EventHandler(this.uicache_Click);
             // 
             // auto
             // 
-            this.auto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.auto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.auto.AutoSize = true;
             this.auto.Checked = true;
@@ -193,7 +194,7 @@
             this.auto.Location = new System.Drawing.Point(59, 362);
             this.auto.Name = "auto";
             this.auto.Size = new System.Drawing.Size(12, 11);
-            this.auto.TabIndex = 13;
+            this.auto.TabIndex = 9;
             this.auto.UseVisualStyleBackColor = true;
             // 
             // error
@@ -204,7 +205,7 @@
             this.error.Location = new System.Drawing.Point(7, 390);
             this.error.Name = "error";
             this.error.Size = new System.Drawing.Size(467, 29);
-            this.error.TabIndex = 14;
+            this.error.TabIndex = 10;
             this.error.TabStop = true;
             this.error.Text = "report errors / bugs / general problems";
             this.error.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.error_LinkClicked);
@@ -228,7 +229,7 @@
             this.twitter.Location = new System.Drawing.Point(12, 430);
             this.twitter.Name = "twitter";
             this.twitter.Size = new System.Drawing.Size(61, 13);
-            this.twitter.TabIndex = 17;
+            this.twitter.TabIndex = 11;
             this.twitter.TabStop = true;
             this.twitter.Text = "my twitter";
             this.twitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.twitter_LinkClicked);
@@ -241,7 +242,7 @@
             this.reddit.Location = new System.Drawing.Point(79, 430);
             this.reddit.Name = "reddit";
             this.reddit.Size = new System.Drawing.Size(39, 13);
-            this.reddit.TabIndex = 18;
+            this.reddit.TabIndex = 12;
             this.reddit.TabStop = true;
             this.reddit.Text = "reddit";
             this.reddit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.reddit_LinkClicked);
@@ -254,7 +255,7 @@
             this.creator.Location = new System.Drawing.Point(284, 430);
             this.creator.Name = "creator";
             this.creator.Size = new System.Drawing.Size(101, 13);
-            this.creator.TabIndex = 19;
+            this.creator.TabIndex = 15;
             this.creator.TabStop = true;
             this.creator.Text = "by josephwalden";
             this.creator.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.creator_LinkClicked);
@@ -267,7 +268,7 @@
             this.ui.Location = new System.Drawing.Point(391, 430);
             this.ui.Name = "ui";
             this.ui.Size = new System.Drawing.Size(81, 13);
-            this.ui.TabIndex = 20;
+            this.ui.TabIndex = 16;
             this.ui.TabStop = true;
             this.ui.Text = "(ui by brnnkr)";
             this.ui.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ui_LinkClicked);
@@ -282,7 +283,7 @@
             this.debslnk.Location = new System.Drawing.Point(15, 108);
             this.debslnk.Name = "debslnk";
             this.debslnk.Size = new System.Drawing.Size(446, 51);
-            this.debslnk.TabIndex = 21;
+            this.debslnk.TabIndex = 3;
             this.debslnk.Text = "Get Debs";
             this.debslnk.UseVisualStyleBackColor = false;
             this.debslnk.Click += new System.EventHandler(this.debslnk_Click);
@@ -295,7 +296,7 @@
             this.github.Location = new System.Drawing.Point(124, 430);
             this.github.Name = "github";
             this.github.Size = new System.Drawing.Size(42, 13);
-            this.github.TabIndex = 22;
+            this.github.TabIndex = 13;
             this.github.TabStop = true;
             this.github.Text = "github";
             this.github.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.github_LinkClicked);
@@ -308,8 +309,21 @@
             this.autolabel.Location = new System.Drawing.Point(77, 353);
             this.autolabel.Name = "autolabel";
             this.autolabel.Size = new System.Drawing.Size(312, 25);
-            this.autolabel.TabIndex = 23;
+            this.autolabel.TabIndex = 19;
             this.autolabel.Text = "automatic respring and uicache";
+            // 
+            // paypal
+            // 
+            this.paypal.AutoSize = true;
+            this.paypal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paypal.LinkColor = System.Drawing.Color.Red;
+            this.paypal.Location = new System.Drawing.Point(172, 430);
+            this.paypal.Name = "paypal";
+            this.paypal.Size = new System.Drawing.Size(44, 13);
+            this.paypal.TabIndex = 14;
+            this.paypal.TabStop = true;
+            this.paypal.Text = "paypal";
+            this.paypal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.paypal_LinkClicked);
             // 
             // Main
             // 
@@ -318,6 +332,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 450);
+            this.Controls.Add(this.paypal);
             this.Controls.Add(this.autolabel);
             this.Controls.Add(this.github);
             this.Controls.Add(this.debslnk);
@@ -370,6 +385,7 @@
         private System.Windows.Forms.Button debslnk;
         private System.Windows.Forms.LinkLabel github;
         private System.Windows.Forms.Label autolabel;
+        private System.Windows.Forms.LinkLabel paypal;
     }
 }
 

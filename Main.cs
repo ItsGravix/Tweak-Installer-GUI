@@ -151,5 +151,10 @@ namespace Tweak_Installer
         {
             Process.Start("https://github.com/josephwalden13/");
         }
+
+        private void paypal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://paypal.me/JosephWalden");
+        }
     }
 }

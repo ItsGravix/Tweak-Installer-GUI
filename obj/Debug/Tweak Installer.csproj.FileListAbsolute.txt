@@ -1,13 +1,3 @@
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csprojResolveAssemblyReference.cache
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak_Installer.Main.resources
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak_Installer.Properties.Resources.resources
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csproj.GenerateResource.Cache
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csproj.CoreCompileInputs.cache
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.exe.config
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.exe
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.pdb
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.exe
-C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.pdb
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\bin\Debug\Tweak Installer.exe.config
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\bin\Debug\Tweak Installer.exe
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\bin\Debug\Tweak Installer.pdb
@@ -18,3 +8,13 @@ C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\obj\Debug\Tweak Installer.csp
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\obj\Debug\Tweak Installer.csproj.CoreCompileInputs.cache
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\obj\Debug\Tweak Installer.exe
 C:\Users\Robert\Desktop\Tweak-Installer-GUI-master\obj\Debug\Tweak Installer.pdb
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.exe.config
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\bin\Debug\Tweak Installer.pdb
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csprojResolveAssemblyReference.cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak_Installer.Main.resources
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak_Installer.Properties.Resources.resources
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csproj.GenerateResource.Cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.exe
+C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.pdb

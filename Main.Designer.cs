@@ -311,6 +311,7 @@
             this.autolabel.Size = new System.Drawing.Size(312, 25);
             this.autolabel.TabIndex = 19;
             this.autolabel.Text = "automatic respring and uicache";
+            this.autolabel.Click += new System.EventHandler(this.autolabel_Click);
             // 
             // paypal
             // 

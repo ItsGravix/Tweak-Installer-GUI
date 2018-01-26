@@ -63,6 +63,7 @@ namespace Tweak_Installer
 
         private void Main_Load(object sender, EventArgs e)
         {
+            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\tweak-installer\\")) Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\tweak-installer\\");
             //check for updates
             try
             {
@@ -155,6 +156,11 @@ namespace Tweak_Installer
         private void paypal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("http://paypal.me/JosephWalden");
+        }
+
+        private void autolabel_Click(object sender, EventArgs e)
+        {
+            auto.Checked = !auto.Checked;
         }
     }
 }

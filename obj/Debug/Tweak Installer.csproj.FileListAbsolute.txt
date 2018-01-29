@@ -18,3 +18,27 @@ C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\
 C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.exe
 C:\Users\josep\OneDrive\Documents\Visual Studio 2017\Projects\C\Tweak Installer\obj\Debug\Tweak Installer.pdb
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Tweak Installer.exe.config
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Tweak Installer.exe
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Tweak Installer.pdb
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak_Installer.Main.resources
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak_Installer.Properties.Resources.resources
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak Installer.csproj.GenerateResource.Cache
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak Installer.csproj.CoreCompileInputs.cache
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak Installer.exe
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak Installer.pdb
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak_Installer.Main2.resources
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\WinSCP.exe
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\x64\7z.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\x86\7z.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\SevenZipExtractor.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\WinSCPnet.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\origi\source\repos\Tweak-Installer-GUI\obj\Debug\Tweak_Installer.Controls.PackageCard.resources
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\origi\source\repos\Tweak-Installer-GUI\bin\Debug\HtmlAgilityPack.xml
